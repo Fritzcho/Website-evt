@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="sv">
+    <head>
+        <title>EVT - Kontakt</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Website of EVT">
+        <meta name="keywords" content="EVT, teknikkonsultföretag, ingenjörstjänster, VA-området, ledningsinstallationer">
+        <meta name="author" content="Alireza Ramezani Mouziraji">
+        <meta name="viewport" content="width=device-width">
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="sources/stylesheet.css"
+        >
+        <link 
+            rel="icon"
+            href=""
+        >
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="sources/script.js"></script>
+    </head>
+
+
+    <body>
+        <header>
+            <img class="logo" src="" alt="EVT" onclick="window.location.href='index.html';">
+            <nav>
+                <ul id="dekstop">
+                        <li><a href="services.html">Våra tjänster</a></li>
+                        <li><a href="references.html">Referensprojekt</a></li>
+                        <li><a href="work.html">Arbeta hos oss</a></li>
+                        <li><a href="contact.html">Kontakta oss</a></li>
+                </ul>
+            </nav>
+            <a href="javascript:void(0);" class="icon" onclick="openNav()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </header>
+
+        <div id="mobileNav" class="overlay">
+            <div class="overlay-content">
+                <a href="index.html">Hem</a>
+                <a href="services.html">Våra tjänster</a>
+                <a href="references.html">Referensprojekt</a>
+                <a href="work.html">Arbeta hos oss</a>
+                <a href="contact.html">Kontakta oss</a>
+            </div>
+          
+        </div>
+
+        
+        <div class="standard-container">
+            <div class="contact-heading">
+                <h1>Kontakta oss</h1>
+            </div>
+            <div class="contact-form">
+                <form action="">
+                    <div class="name-input">
+                        <label for="name">Ditt namn:</label><br>
+                        <input type="text" id="name" name="name"><br>
+                    </div>
+
+                    <div class="mail-input">
+                        <label for="email">E-post:</label><br>
+                        <input type="text" id="email" name="email"><br>
+                    </div>
+
+                    <div class="message-input">
+                        <label for="message">Beskriv ditt ärende för oss:</label><br>
+                        <textarea id="message" name="message"></textarea><br>
+                    </div>
+
+                    
+                    <input class="submission-button" type="submit" value="Skicka">
+                </form>
+            </div>
+
+            <div class="locations">
+                <ul>
+                    <li><h2>Bromma</h2></li>
+                    <hr>
+                    <li><h4>Adress: Mariehällsvägen 37A, 4tr</h4></li>
+                    <li><h4>Postnummer: 168 65</h4>
+                    <li><h4>Telefon: 070–259 63 36</h4></li>
+                </ul>
+                <ul>
+                    <li><h2>Umeå</h2></li>
+                    <hr>
+                    <li><h4>Adress: Kaserngatan 3</h4></li>
+                    <li><h4>Postnummer: 903 47</h4>
+                    <li><h4>Telefon: 070–366 04 48</h4></li>
+                </ul>
+                <ul>
+                    <li><h2>Vännäs</h2></li>
+                    <hr>
+                    <li><h4>Adress: Jämteböle 81</h4></li>
+                    <li><h4>Postnummer: 911 91</h4>
+                    <li><h4>Telefon: 070–325 22 36</h4></li>
+                </ul>
+            </div>
+
+            <div class="contact-table">
+                <h2>Medarbetare</h2>
+                <h3>Umeå</h3>
+                <table>
+                    <tr>
+                        <th width="50%">Namn</th>
+                        <th width="40%">Telefon</th>
+                        <th>E-post</th>
+                    </tr>
+                    <tr>
+                        <td>Stefan Eriksson</td>
+                        <td>070-325 22 36</td>
+                        <td><a href="mailto:stefan.eriksson@evtumea.se"><img src="sources/images/mail_icon.png" width="35px"></a></td>
+                    </tr>
+                    <tr>
+                        <td>Ulrika Eriksson</td>
+                        <td>070-647 39 96</td>
+                        <td><a href="mailto:ulrika.eriksson@evtumea.se"><img src="sources/images/mail_icon.png" width="35px"></a></td>
+                    </tr>
+                    <tr>
+                        <td>Martin Lundgren</td>
+                        <td>070-366 04 48</td>
+                        <td><a href="mailto:martin.lundgren@evtumea.se"><img src="sources/images/mail_icon.png" width="35px"></a></td>
+                    </tr>
+                </table>
+                <h3>Bromma</h3>
+                <table>
+                    <tr>
+                        <th width="50%">Namn</th>
+                        <th width="40%">Telefon</th>
+                        <th>E-post</th>
+                    </tr>
+                    <tr>
+                        <td>Edvin Andersson</td>
+                        <td>070-259 66 35</td>
+                        <td><a href="mailto:edvin.andersson@evtumea.se"><img src="sources/images/mail_icon.png" width="35px"></a></td>
+                    </tr>
+                    <tr>
+                        <td>Sergio Aracena</td>
+                        <td></td>
+                        <td><a href="mailto:edvin.andersson@evtumea.se"><img src="sources/images/mail_icon.png" width="35px"></a></td>
+                    </tr>
+                    <tr>
+                        <td>Jörgen Bodling</td>
+                        <td>070-576 23 30</td>
+                        <td><a href="mailto:edvin.andersson@evtumea.se"><img src="sources/images/mail_icon.png" width="35px"></a></td>
+                    </tr>
+                    <tr>
+                        <td>Shanze Dogar</td>
+                        <td></td>
+                        <td><a href="mailto:edvin.andersson@evtumea.se"><img src="sources/images/mail_icon.png" width="35px"></a></td>
+                    </tr>
+                    <tr>
+                        <td>Andreas Engström</td>
+                        <td>070-259 63 37</td>
+                        <td><a href="mailto:edvin.andersson@evtumea.se"><img src="sources/images/mail_icon.png" width="35px"></a></td>
+                    </tr>
+                    <tr>
+                        <td>Bertil Johansson</td>
+                        <td>070-329 39 70</td>
+                        <td><a href="mailto:edvin.andersson@evtumea.se"><img src="sources/images/mail_icon.png" width="35px"></a></td>
+                    </tr>
+                    <tr>
+                        <td>Göran Johansson</td>
+                        <td>070-625 31 18</td>
+                        <td><a href="mailto:edvin.andersson@evtumea.se"><img src="sources/images/mail_icon.png" width="35px"></a></td>
+                    </tr>
+                    <tr>
+                        <td>Tomas Lind</td>
+                        <td>070-757 83 73</td>
+                        <td><a href="mailto:edvin.andersson@evtumea.se"><img src="sources/images/mail_icon.png" width="35px"></a></td>
+                    </tr>
+                    <tr>
+                        <td>Jonas Sundgrej</td>
+                        <td>070-259 63 36</td>
+                        <td><a href="mailto:edvin.andersson@evtumea.se"><img src="sources/images/mail_icon.png" width="35px"></a></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <footer>
+            <div class="footer-list">
+                <ul>
+                    <li><h2>Bromma</h2></li>
+                    <hr>
+                    <li><h4>Adress: Mariehällsvägen 37A, 4tr</h4></li>
+                    <li><h4>Telefon: 070–259 63 36</h4></li>
+                </ul>
+                <ul>
+                    <li><h2>Umeå</h2></li>
+                    <hr>
+                    <li><h4>Adress: Kaserngatan 3</h4></li>
+                    <li><h4>Telefon: 070–366 04 48</h4></li>
+                </ul>
+                <ul>
+                    <li><h2>Vännäs</h2></li>
+                    <hr>
+                    <li><h4>Adress: Jämteböle 81</h4></li>
+                    <li><h4>Telefon: 070–325 22 36</h4></li>
+                </ul>
+            </div>
+            <h3>Copyright© EVT Umeå AB 2021</h3>
+        </footer>
+    </body>
+</html>

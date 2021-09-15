@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="sv">
+    <head>
+        <title>EVT - Tjänster</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Website of EVT">
+        <meta name="keywords" content="EVT, teknikkonsultföretag, ingenjörstjänster, VA-området, ledningsinstallationer">
+        <meta name="author" content="Alireza Ramezani Mouziraji">
+        <meta name="viewport" content="width=device-width">
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="sources/stylesheet.css"
+        >
+        <link 
+            rel="icon"
+            href=""
+        >
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="sources/script.js"></script>
+    </head>
+
+
+    <body>
+        <header>
+            <img class="logo" src="" alt="EVT" onclick="window.location.href='index.html';">
+            <nav>
+                <ul id="dekstop">
+                        <li><a href="services.html">Våra tjänster</a></li>
+                        <li><a href="references.html">Referensprojekt</a></li>
+                        <li><a href="work.html">Arbeta hos oss</a></li>
+                        <li><a href="contact.html">Kontakta oss</a></li>
+                </ul>
+            </nav>
+            <a href="javascript:void(0);" class="icon" onclick="openNav()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </header>
+
+        <div id="mobileNav" class="overlay">
+            <div class="overlay-content">
+                <a href="index.html">Hem</a>
+                <a href="services.html">Våra tjänster</a>
+                <a href="references.html">Referensprojekt</a>
+                <a href="work.html">Arbeta hos oss</a>
+                <a href="contact.html">Kontakta oss</a>
+            </div>
+        </div>
+        
+        <div class="standard-container">
+            <div class="about-services">
+                <h1>Våra tjänster</h1>
+                <h3>Vi erbjuder diverse tjänster inom VA, från konstnadskalkyler till 
+                    maskinkontroll och slutbesiktningar
+                </h3>
+            </div>
+            <button class="to-requests" onclick="window.location.href='contact.html';">Skicka ärendeförfrågan</button>
+            <button class="to-references" onclick="window.location.href='references.html';">Se referensprojekt</button>
+            <div class="all-services">
+                <h2>Vi erbjuder bland annat följande tjänster</h2>
+                <ul>
+                    <li>
+                        <div class="service-text-container"><h3>Förstudier, utredningar, kostnadskalkyler och beräkningar.</h3></div>
+                        <div class="service-image-container"><img class="service-image" src="sources/images/service_picture_1.jpg"></div>
+                    </li>
+                    <li>
+                        <div class="service-text-container"><h3>Projektering av reningsverk, pumpstationer och tryckledningar.</h3></div>
+                        <div class="service-image-container"><img class="service-image" src="sources/images/service_picture_2.jpg"></div>
+                    </li>
+                    <li>
+                        <div class="service-text-container"><h3>Projektering av markförlagda rörledningar.</h3></div>
+                        <div class="service-image-container"><img class="service-image" src="sources/images/service_picture_3.jpg"></div>
+                    </li>
+                    <li>
+                        <div class="service-text-container"><h3>Projektering för VA-system i omvandlingsområden.</h3></div>
+                        <div class="service-image-container"><img class="service-image" src="sources/images/service_picture_4.jpg"></div>
+                    </li>
+                    <li>
+                        <div class="service-text-container"><h3>Maskinkontroll</h3></div>
+                        <div class="service-image-container"><img class="service-image" src="sources/images/service_picture_5.jpg"></div>
+                    </li>
+                    <li>
+                        <div class="service-text-container"><h3>Projekt- och byggledning</h3></div>
+                        <div class="service-image-container"><img class="service-image" src="sources/images/service_picture_6.jpg"></div>
+                    </li>
+                    <li>
+                        <div class="service-text-container"><h3>Slutbesiktningar</h3></div>
+                        <div class="service-image-container"><img class="service-image" src="sources/images/service_picture_7.jpg"></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <footer>
+            <div class="footer-list">
+                <ul>
+                    <li><h2>Bromma</h2></li>
+                    <hr>
+                    <li><h4>Adress: Mariehällsvägen 37A, 4tr</h4></li>
+                    <li><h4>Telefon: 070–259 63 36</h4></li>
+                </ul>
+                <ul>
+                    <li><h2>Umeå</h2></li>
+                    <hr>
+                    <li><h4>Adress: Kaserngatan 3</h4></li>
+                    <li><h4>Telefon: 070–366 04 48</h4></li>
+                </ul>
+                <ul>
+                    <li><h2>Vännäs</h2></li>
+                    <hr>
+                    <li><h4>Adress: Jämteböle 81</h4></li>
+                    <li><h4>Telefon: 070–325 22 36</h4></li>
+                </ul>
+            </div>
+            <h3>Copyright© EVT Umeå AB 2021</h3>
+        </footer>
+    </body>
+</html>

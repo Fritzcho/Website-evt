@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="sv">
+    <head>
+        <title>EVT - startsida</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Website of EVT">
+        <meta name="keywords" content="EVT, teknikkonsultföretag, ingenjörstjänster, VA-området, ledningsinstallationer">
+        <meta name="author" content="Alireza Ramezani Mouziraji">
+        <meta name="viewport" content="width=device-width">
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="sources/stylesheet.css"
+        >
+        <link 
+            rel="icon"
+            href=""
+        >
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="sources/script.js"></script>
+    </head>
+
+
+    <body>
+        <header>
+            <img class="logo" src="" alt="EVT" onclick="window.location.href='index.html';">
+            <nav>
+                <ul id="dekstop">
+                        <li><a href="services.html">Våra tjänster</a></li>
+                        <li><a href="references.html">Referensprojekt</a></li>
+                        <li><a href="work.html">Arbeta hos oss</a></li>
+                        <li><a href="contact.html">Kontakta oss</a></li>
+                </ul>
+            </nav>
+            <a href="javascript:void(0);" class="icon" onclick="openNav()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </header>
+
+        <div id="mobileNav" class="overlay">
+            <div class="overlay-content">
+                <a href="index.html">Hem</a>
+                <a href="services.html">Våra tjänster</a>
+                <a href="references.html">Referensprojekt</a>
+                <a href="work.html">Arbeta hos oss</a>
+                <a href="contact.html">Kontakta oss</a>
+            </div>
+          
+        </div>
+
+        <div class="standard-container">
+            <div class="welcoming-picture">
+                <!--The heading text-->
+                <div class="heading">
+                    <h1>Det här är EVT</h1>
+                    <h3>Ett fristående teknikkonsultföretag som erbjuder ingenjörstjänster inom VA-området. 
+                        Vi arbetar med 3D-projektering för att ge våra kunder tydliga och översiktliga ritningar och 
+                        underlag och vi är speciellt inriktade mot komplexa projekt i krävande storstadsmiljöer.</h3>
+                </div>
+                <a class="scroller" href="#">
+                    <span>
+                        <div class="arrow-down"></div>
+                    </span>
+                </a>
+            </div>
+
+            <section class="about-evt" id="container">
+
+                <div class="slide" id="slide1">
+                    <div class="slide-text">
+                        <h2>Kort om EVT</h2>
+                        <p>
+                            Företaget grundades i Umeå år 1998 och finns idag representerade i Umeå och Bromma.  
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                            ut labore et dolore magna aliqua.
+                        </p>
+                    </div>
+                    <div class="slide-image">
+                        <img class="about-evt-image" src="sources/images/about_slide_picture_1.jpg" alt="Bild om evt">
+                    </div>
+                    <a href="" class="arrow-right" id="right-arrow-1"></a>
+                </div>
+
+                <div class="slide" id="slide2">
+                    <div class="slide-text">
+                        <h2>Vad vi erbjuder</h2>
+                        <p>
+                            Företaget grundades i Umeå år 1998 och finns idag representerade i Umeå och Bromma.  
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                            ut labore et dolore magna aliqua.
+                        </p>
+                    </div>
+                    <div class="button-div">
+                        <button class="services-button" onclick="window.location.href='services.html';">Våra tjänster</button>
+                    </div>
+                    <a href="" class="arrow-left" id="left-arrow-2"></a>
+                </div>       
+            </section>
+        </div>
+
+        <div class="news-heading">
+            <h2>Uppdateringar</h2>
+        </div>
+        <div class="news">
+            <ul>
+                <li><h4>2021-09-03</h4></li>
+                <hr>
+                <li><h4>Ny anställd!</h4></li>
+                <li>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                        ut labore et dolore magna aliqua.
+                    </p>
+                </li>
+            </ul>
+            <ul>
+                <li><h4>2021-09-03</h4></li>
+                <hr>
+                <li><h4>Ny anställd!</h4></li>
+                <li>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                        ut labore et dolore magna aliqua.
+                    </p>
+                </li>
+            </ul>
+        </div>
+
+        <footer>
+            <div class="footer-list">
+                <ul>
+                    <li><h2>Bromma</h2></li>
+                    <hr>
+                    <li><h4>Adress: Mariehällsvägen 37A, 4tr</h4></li>
+                    <li><h4>Telefon: 070–259 63 36</h4></li>
+                </ul>
+                <ul>
+                    <li><h2>Umeå</h2></li>
+                    <hr>
+                    <li><h4>Adress: Kaserngatan 3</h4></li>
+                    <li><h4>Telefon: 070–366 04 48</h4></li>
+                </ul>
+                <ul>
+                    <li><h2>Vännäs</h2></li>
+                    <hr>
+                    <li><h4>Adress: Jämteböle 81</h4></li>
+                    <li><h4>Telefon: 070–325 22 36</h4></li>
+                </ul>
+            </div>
+            <h3>Copyright© EVT Umeå AB 2021</h3>
+        </footer>
+
+    </body>
+</html>
