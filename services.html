@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="sv">
     <head>
-        <title>EVT - Tjänster</title>
+        <title>Evt - Tjänster</title>
         <meta charset="UTF-8">
-        <meta name="description" content="Website of EVT">
-        <meta name="keywords" content="EVT, teknikkonsultföretag, ingenjörstjänster, VA-området, ledningsinstallationer">
+        <meta name="description" content="Website of Evt">
+        <meta name="keywords" content="Evt, teknikkonsultföretag, ingenjörstjänster, VA-området, ledningsinstallationer">
         <meta name="author" content="Alireza Ramezani Mouziraji">
         <meta name="viewport" content="width=device-width">
         <link
@@ -14,7 +14,7 @@
         >
         <link 
             rel="icon"
-            href=""
+            href="sources/images/Loggor/evt_ikon.png"
         >
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,13 +27,13 @@
 
     <body>
         <header>
-            <img class="logo" src="" alt="EVT" onclick="window.location.href='index.html';">
+            <img class="logo" src="sources/images/Loggor/evt_logga_blue.png" alt="Evt" onclick="window.location.href='index.html';">
             <nav>
                 <ul id="dekstop">
                         <li><a href="services.html">Våra tjänster</a></li>
                         <li><a href="references.html">Referensprojekt</a></li>
                         <li><a href="work.html">Arbeta hos oss</a></li>
-                        <li><a href="contact.html">Kontakta oss</a></li>
+                        <li><a href="kontakt.php">Kontakta oss</a></li>
                 </ul>
             </nav>
             <a href="javascript:void(0);" class="icon" onclick="openNav()">
@@ -47,7 +47,7 @@
                 <a href="services.html">Våra tjänster</a>
                 <a href="references.html">Referensprojekt</a>
                 <a href="work.html">Arbeta hos oss</a>
-                <a href="contact.html">Kontakta oss</a>
+                <a href="kontakt.php">Kontakta oss</a>
             </div>
         </div>
         
@@ -58,40 +58,68 @@
                     maskinkontroll och slutbesiktningar
                 </h3>
             </div>
-            <button class="to-requests" onclick="window.location.href='contact.html';">Skicka ärendeförfrågan</button>
-            <button class="to-references" onclick="window.location.href='references.html';">Se referensprojekt</button>
             <div class="all-services">
                 <h2>Vi erbjuder bland annat följande tjänster</h2>
-                <ul>
+                <!--<ul>
                     <li>
-                        <div class="service-text-container"><h3>Förstudier, utredningar, kostnadskalkyler och beräkningar.</h3></div>
-                        <div class="service-image-container"><img class="service-image" src="sources/images/service_picture_1.jpg"></div>
+                        <h3>Förstudier, utredningar, kostnadskalkyler och beräkningar.</h3>
                     </li>
+
                     <li>
-                        <div class="service-text-container"><h3>Projektering av reningsverk, pumpstationer och tryckledningar.</h3></div>
-                        <div class="service-image-container"><img class="service-image" src="sources/images/service_picture_2.jpg"></div>
+                        <h3>Projektering av reningsverk, pumpstationer och tryckledningar.</h3>
                     </li>
+
                     <li>
-                        <div class="service-text-container"><h3>Projektering av markförlagda rörledningar.</h3></div>
-                        <div class="service-image-container"><img class="service-image" src="sources/images/service_picture_3.jpg"></div>
+                        <h3>Projektering av markförlagda rörledningar.</h3>
                     </li>
+
                     <li>
-                        <div class="service-text-container"><h3>Projektering för VA-system i omvandlingsområden.</h3></div>
-                        <div class="service-image-container"><img class="service-image" src="sources/images/service_picture_4.jpg"></div>
+                        <h3>Projektering för VA-system i omvandlingsområden.</h3>
                     </li>
+
                     <li>
-                        <div class="service-text-container"><h3>Maskinkontroll</h3></div>
-                        <div class="service-image-container"><img class="service-image" src="sources/images/service_picture_5.jpg"></div>
+                        <h3>Maskinkontroll</h3>
                     </li>
+
                     <li>
-                        <div class="service-text-container"><h3>Projekt- och byggledning</h3></div>
-                        <div class="service-image-container"><img class="service-image" src="sources/images/service_picture_6.jpg"></div>
+                        <h3>Projekt- och byggledning</h3>
                     </li>
+
                     <li>
-                        <div class="service-text-container"><h3>Slutbesiktningar</h3></div>
-                        <div class="service-image-container"><img class="service-image" src="sources/images/service_picture_7.jpg"></div>
+                        <h3>Entreprenadbesiktningar</h3>
                     </li>
-                </ul>
+                </ul>-->
+                <div class="service-grid">
+                    <div class="service">
+                        <h3>Förstudier, utredningar, kostnadskalkyler och beräkningar</h3>
+                    </div>
+                    <div class="service">
+                        <h3>Projektering av reningsverk, pumpstationer och tryckledningar.</h3>
+                    </div>
+                    <div class="service">
+                        <h3>Projektering av markförlagda rörledningar.</h3>
+                    </div>
+                    <div class="service">
+                        <h3>Projektering för VA-system i omvandlingsområden.</h3>
+                    </div>
+                    <div class="service">
+                        <h3>Maskinkontroll</h3>
+                    </div>
+                    <div class="service">
+                        <h3>Projekt- och byggledning</h3>
+                    </div>
+                    <div class="service">
+                        <h3>Entreprenadbesiktningar</h3>
+                    </div>
+                    <div class="services buttons">
+                        <button class="to-requests" onclick="window.location.href='kontakt.php';">Skicka ärendeförfrågan</button>
+                        <button class="to-references" onclick="window.location.href='references.html';">Se referensprojekt</button>
+                    </div>
+                </div>
+                <!--<div class="services buttons">
+                    <button class="to-requests" onclick="window.location.href='kontakt.php';">Skicka ärendeförfrågan</button>
+                    <button class="to-references" onclick="window.location.href='references.html';">Se referensprojekt</button>
+                </div>-->
             </div>
         </div>
 
@@ -116,7 +144,7 @@
                     <li><h4>Telefon: 070–325 22 36</h4></li>
                 </ul>
             </div>
-            <h3>Copyright© EVT Umeå AB 2021</h3>
+            <h3>Copyright© Evt Umeå AB 2021</h3>
         </footer>
     </body>
 </html>

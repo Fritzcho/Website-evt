@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="sv">
+    <head>
+        <title>Evt - Referensprojekt</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Website of Evt">
+        <meta name="keywords" content="Evt, teknikkonsultföretag, ingenjörstjänster, VA-området, ledningsinstallationer">
+        <meta name="author" content="Alireza Ramezani Mouziraji">
+        <meta name="viewport" content="width=device-width">
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="sources/stylesheet.css"
+        >
+        <link 
+            rel="icon"
+            href="sources/images/Loggor/evt_ikon.png"
+        >
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="sources/script.js"></script>
+    </head>
+
+
+    <body onload="showDivs(1)">
+        <header>
+            <img class="logo" src="sources/images/Loggor/evt_logga_blue.png" alt="Evt" onclick="window.location.href='index.html';">
+            <nav>
+                <ul id="dekstop">
+                        <li><a href="services.html">Våra tjänster</a></li>
+                        <li><a href="references.html">Referensprojekt</a></li>
+                        <li><a href="work.html">Arbeta hos oss</a></li>
+                        <li><a href="kontakt.php">Kontakta oss</a></li>
+                </ul>
+            </nav>
+            <a href="javascript:void(0);" class="icon" onclick="openNav()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </header>
+
+        <div id="mobileNav" class="overlay">
+            <div class="overlay-content">
+                <a href="index.html">Hem</a>
+                <a href="services.html">Våra tjänster</a>
+                <a href="references.html">Referensprojekt</a>
+                <a href="work.html">Arbeta hos oss</a>
+                <a href="kontakt.php">Kontakta oss</a>
+            </div>
+          
+        </div>
+
+        <div class="standard-container">
+            <div class="reference-heading">
+                <h1>Renovering av rötkammare R100 och R200, Käppalaverket</h1>
+                <h3>Beställare: Käppalaförbundet</h3>
+                <h3>Tidsperiod: 2020-2025</h3>
+            </div>
+            <div class="reference-text">
+                <p>
+                    Rötkammarna R100 och R200 är byggda i slutet på 60-talet och ska renoveras med målsättning att de ska uppnå 
+                    en byggnadsteknisk livslängd på ytterligare 50 år och att installationer ska uppnå en teknisk livslängd på 
+                    25 år från färdigställande. Då en av dessa rötkammare alltid måste vara i drift, stängs de av och åtgärdas 
+                    i två etapper.
+                </p>
+                <h3>Vår roll:</h3> 
+                <p>
+                    Evt har haft i uppdrag att planera och leda nedstängning och tömning av rötkammare R100, 
+                    samt ta fram statusbedömning och åtgärdsförslag för R100 och R200. Evt har också i uppdrag att ta fram 
+                    systemhandling, förfrågningsunderlag för entreprenadupphandling, bistå under entreprenadupphandlingsskedet,
+                    utföra byggledning av entreprenader för bygg & berg, maskin & VS, ventilation, el, styr samt brand och
+                    släcksystem för R100, samt utföra driftsättningsledning vid driftsättning av rötkammare R100. Beslut
+                    om genomförande av etapp 2, R200, kommer att fattas av Käppalaförbundet sedan R100 driftsatts och 
+                    R200 kunnat tömmas och statusbedömas. 
+                </p>
+            </div>
+            <div class="reference-scroll-down">
+                <div class="scroll-text"><h3>Se bilder från projektet</h3></div>
+                <div class="reference-arrow-down"></div>
+            </div>
+            <div class="reference-image-slide">
+                <div class="slide-image-container">
+                    <img class="image-slide-image" src="sources/images/R100_R200/tömning.jpg">
+                    <div class="image-slide-description">
+                        Beskrivning
+                    </div>
+                </div>
+                <div class="slide-image-container">
+                    <img class="image-slide-image" src="sources/images/R100_R200/installation.jpg">
+                    <div class="image-slide-description">
+                        Beskrivning
+                    </div>
+                </div>
+                <div class="slide-image-container">
+                    <img class="image-slide-image" src="sources/images/R100_R200/el.JPG">
+                    <div class="image-slide-description">
+                        Beskrivning
+                    </div>
+                </div>
+                <div class="slide-image-container">
+                    <img class="image-slide-image" src="sources/images/R100_R200/projektering.jpg">
+                    <div class="image-slide-description">
+                        Beskrivning
+                    </div>
+                </div>
+
+
+                <button class="button-arrow-left" onclick="plusDivs(-1)">&#10094;</button>
+                <button class="button-arrow-right" onclick="plusDivs(1)">&#10095;</button>
+            </div>
+        </div>
+
+        <footer>
+            <div class="footer-list">
+                <ul>
+                    <li><h2>Bromma</h2></li>
+                    <hr>
+                    <li><h4>Adress: Mariehällsvägen 37A, 4tr</h4></li>
+                    <li><h4>Telefon: 070–259 63 36</h4></li>
+                </ul>
+                <ul>
+                    <li><h2>Umeå</h2></li>
+                    <hr>
+                    <li><h4>Adress: Kaserngatan 3</h4></li>
+                    <li><h4>Telefon: 070–366 04 48</h4></li>
+                </ul>
+                <ul>
+                    <li><h2>Vännäs</h2></li>
+                    <hr>
+                    <li><h4>Adress: Jämteböle 81</h4></li>
+                    <li><h4>Telefon: 070–325 22 36</h4></li>
+                </ul>
+            </div>
+            <h3>Copyright© Evt Umeå AB 2021</h3>
+        </footer>
+    </body>
+</html>

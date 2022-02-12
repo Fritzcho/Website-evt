@@ -1,8 +1,21 @@
+$(document).ready(function(){       
+  $(document).scroll(function() { 
+      scroll_pos = $(this).scrollTop();
+      if(scroll_pos > 0) {
+          $("header").css('background-color', '#333333');
+      } else {
+          $("header").css('background-color', '#33333300');
+      }
+  });
+});
+
+
 /* Open nav */
 function openNav() {
   if (document.getElementById("mobileNav").style.width == "70%") {
     document.getElementById("mobileNav").style.width = "0%";
   } else {
+    $("header").css('background-color', '#333333');
     document.getElementById("mobileNav").style.width = "70%";
   }
 }
@@ -44,10 +57,30 @@ $(function() {
 });
 
 $(function() {
+  $('#right-arrow-1-2').click(function(event) {
+    event.preventDefault();
+    $('#container').animate({
+      scrollLeft: $('#infoslide2').offset().left
+    }, "fast");
+    return false;
+  });
+});
+
+$(function() {
+  $('#left-arrow-2-2').click(function(event) {
+    event.preventDefault();
+    $('#container').animate({
+      scrollLeft: $('#infoslide1').offset().left
+    }, "fast");
+    return false;
+  });
+});
+
+$(function() {
   $('#right-arrow-2').click(function(event) {
     event.preventDefault();
     $('#container').animate({
-      scrollLeft: "+=2000px"
+      scrollLeft: "+=10000px"
     }, "fast");
     return false;
   });
@@ -91,7 +124,7 @@ function plusDivs(n) {
 
 function showDivs(n) {
   var i;
-  var x = document.getElementsByClassName("image-slide-image");
+  var x = document.getElementsByClassName("slide-image-container");
   if (n > x.length) {slideIndex = 1}
   if (n < 1) {slideIndex = x.length} ;
   for (i = 0; i < x.length; i++) {
@@ -99,7 +132,6 @@ function showDivs(n) {
   }
   x[slideIndex-1].style.width = "100%";
 }
-
 
 /*Function for opening and closing the collapsible in work.html*/
 function collapse() {
@@ -112,9 +144,22 @@ function collapse() {
       var content = this.nextElementSibling;
       if (content.style.maxHeight){
         content.style.maxHeight = null;
+        content.style.padding = "0px 5%";
       } else {
         content.style.maxHeight = content.scrollHeight + "px";
+        content.style.padding = "0px 5% 5% 5%";
       } 
     });
+  }
+}
+
+function largerFont(n) {
+  var x = document.getElementsByClassName("service-info");
+  if (x[n].style.fontSize == "18px") {
+    x[n].style.fontSize = "0px";
+    x[n].style.padding = "0px";
+  } else {
+    x[n].style.fontSize = "18px";
+    x[n].style.padding = "15px";
   }
 }
